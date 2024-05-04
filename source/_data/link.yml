@@ -1,0 +1,29 @@
+- class_name: 友情链接
+  class_desc: 朋友
+  link_list:
+        - name: 安小歪blog
+          link: https://hexo.shangskr.top
+          avatar: https://hexo.shangskr.top/img/favicon.png
+          descr: 记住你！自己！
+          siteshot: https://hexo.shangskr.top/img/siteshot.png
+        - name: 九弦之屋
+          link: https://blog.sinzmise.top/
+          avatar: https://blog.sinzmise.eu.org/img/avatar.png
+          descr: 随着风和光来的旅行者，欢迎来到九弦之屋
+          siteshot: https://image.thum.io/get/width/400/crop/800/allowJPG/wait/20/noanimate/https://blog.sinzmise.top/
+
+- class_name: 友情链接
+  class_desc: 大佬
+  link_list:
+    - name: 爱吃肉的猫
+      link: https://meuicat.com/
+      avatar: https://s11.ax1x.com/2023/05/26/p9qChjI.jpg
+      descr: 有肉有猫有生活.
+
+- class_name: 友情链接
+  class_desc: 朋友
+  link_list:
+    - name: W1ndysの小屋
+      link: https://blog.w1ndys.top/
+      avatar: https://blog.w1ndys.top/img/about/avatar.png
+      descr: 欲戴皇冠，必承其重

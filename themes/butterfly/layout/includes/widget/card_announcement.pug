@@ -1,0 +1,16 @@
+if theme.aside.card_announcement.enable
+  .card-widget.card-announcement
+    #welcome-info
+    script(data-pjax).
+      var longitude = '#{config.welcome.longitude}';
+      var Latitude = '#{config.welcome.Latitude}';
+      var txkey = '#{config.welcome.key}'
+      var ipLoacation;
+      window.onload = () => {
+        welcometxmap()
+      };
+      document.addEventListener("pjax:complete", welcometxmap())
+    .item-headline
+      i.fas.fa-bullhorn.fa-shake
+      span= _p('aside.card_announcement')
+    .announcement_content!= theme.aside.card_announcement.content

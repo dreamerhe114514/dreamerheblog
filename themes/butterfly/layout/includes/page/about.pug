@@ -1,0 +1,333 @@
+#icat-about-page
+  .icat-author-box
+    .icat-author-img
+      img.no-lightbox(src='https://img.qianxun7747.eu.org/file/bba243d8da4453c68ed89.jpg')
+    .image-dot
+  .icat-author-content
+    .icat-author-content-item.myInfoAndSayHello
+      .title-one Hey，很高兴认识你👋
+      .title-two
+        | 我叫
+        span.inline-word  Dreamerhe(追梦小何)
+      .title-one
+        | 是一名 只会写博客的博主 & 
+        span.inline-word 学生
+    .aboutsiteTips.icat-author-content-item
+      .icat-author-content-item-tips 追求
+      h2
+        | 源于
+        br
+        | 热爱而去
+        span.inline-word 体验
+        .mask
+          span.first-tips 游戏
+          |
+          span 生活
+          |
+          span(data-up) 博客
+          |
+          span(data-show) 感受
+
+  .hello-about
+    .cursor(style='translate:none;rotate:none;scale:none;transform:translate(721px,180px)')
+    .shapes
+      .shape.shape-1(style='translate:none;rotate:none;scale:none;transform:translate(721px,180px)')
+      .shape.shape-2(style='translate:none;rotate:none;scale:none;transform:translate(721px,180px)')
+      .shape.shape-3(style='translate:none;rotate:none;scale:none;transform:translate(721px,180px)')
+    .content
+      h1 追梦小何
+
+  .icat-author-content
+    .icat-author-content-item.skills
+      .card-content
+        .icat-author-content-item-tips 技能
+        span.icat-author-content-item-title 慢慢提升
+        .skills-style-group
+          .tags-group-all
+            .tags-group-wrapper
+              each i in site.data.creativity
+                - const evenNum = i.creativity_list.filter((x, index) => index % 2 === 0);
+                - const oddNum = i.creativity_list.filter((x, index) => index % 2 === 1);
+                each item, index in i.creativity_list
+                  if ((index+1 <= evenNum.length) && (index+1 <= oddNum.length))
+                    .tags-group-icon-pair
+                      .tags-group-icon(style=`background: ${evenNum[index].color}`)
+                        img.no-lightbox(title=evenNum[index].name, src=evenNum[index].icon)
+                      .tags-group-icon(style=`background: ${oddNum[index].color}`)
+                        img.no-lightbox(title=oddNum[index].name, src=oddNum[index].icon)
+          .skills-list
+            each i in site.data.creativity
+              each item, index in i.creativity_list
+                .skill-info
+                  .skill-icon(style=`background: ${item.color}`)
+                    img.no-lightbox(title=item.name, src=item.icon)
+                  .skill-name
+                    span=item.name
+            .etc ...
+    .icat-author-content-item.careers
+      .card-content
+        .icat-author-content-item-tips 生涯
+        span.icat-author-content-item-title 無限進步
+        .careers-group
+          .careers-item
+            .circle(style='background:#357ef5')
+            .name EC/DC | 博主
+          .careers-item
+            .circle(style='background:#937df7')
+            .name EC/TP | 游戏玩家
+          .careers-item
+            .circle(style='background:#00d0e1')
+            .name UGC | 学生
+          .careers-item
+            .circle(style='background:#ff0000')
+            .name CNC/PE | 代码爱好者
+        img.icat-author-content-img.no-lightbox(alt='生涯', src='https://yife68.gitee.io/icat-pic/blog/2.webp')
+
+  .icat-author-content
+    .about-statistic.icat-author-content-item
+      .card-content
+        .icat-author-content-item-tips 数据
+        span.icat-author-content-item-title 访问统计
+        #statistic
+        .post-tips
+          | 统计信息来自
+          a(href='https://user.51.la/activity/invite?cc=22L4t3', target='_blank', rel='noopener nofollow') 51la网站统计
+        .icat-banner-button-group
+          a.banner-button(onclick='pjax.loadUrl("/census/")', data-pjax-state)
+            i.iconfont.icat-51la
+            |
+            span.banner-button-text 访问统计
+    .icat-author-content-item-group.column.mapAndInfo
+      .icat-author-content-item.map.single
+        span.map-title
+          | 现在住在
+          b 中国 重庆
+      .icat-author-content-item.selfInfo.single
+        div
+          span.selfInfo-title 生于
+          |
+          span.selfInfo-content(style='color:#43a6c6') 2009
+        div
+          span.selfInfo-title 星座
+          |
+          span.selfInfo-content(style='color:#c69043') 处女座
+        div
+          span.selfInfo-title 现在职业
+          |
+          span.selfInfo-content(style='color:#b04fe6') 学生
+
+  .icat-author-content
+    .icat-author-content-item.personalities
+      .icat-author-content-item-tips 性格
+      span.icat-author-content-item-title 易怒且暴躁QWQ
+      .title-two(style='color:#56a178') ENFP-T
+      .post-tips
+        | 在 
+        a(href='https://www.16personalities.com/', target='_blank', rel='noopener nofollow') 16Personalities 
+        | 了解关于 
+        a(target='_blank', rel='noopener external nofollow', href='https://www.16personalities.com/enfp-personality?utm_source=welcome-turbulent-campaigner&utm_medium=email&utm_campaign=results&utm_content=type-personality-0') 活动家 
+        | 的更多信息
+      .image
+        img.no-lightbox(src='https://www.16personalities.com/static/images/personality-types/avatars/email/large/ENFP_male.png?v=1')
+    .icat-author-content-item.myphoto
+      img.icat-author-content-img.no-lightbox(alt='img', src='https://img.qianxun7747.eu.org/file/bba243d8da4453c68ed89.jpg')
+
+  .icat-author-content
+    .icat-author-content-item.maxim
+      .icat-author-content-item-tips 座右铭
+      span.maxim-title
+        span(style='opacity:.6;margin-bottom:8px') 梦境之浩瀚，追寻之困难
+        |
+        span 努力之辛苦,实现之甘甜.
+    .icat-author-content-item.buff
+      .card-content
+        .icat-author-content-item-tips 特长
+        span.buff-title
+          span(style='opacity:.6;margin-bottom:8px')
+            | 啥也不会只会求助的
+            span.inline-word 求助狂魔
+          |
+          span
+            | 各项学习能力
+            span.inline-word 慢慢提高
+      .card-background-icon
+        i.fa-solid.fa-dice-d20
+
+  .icat-author-content
+    .icat-author-content-item.game-yuanshen
+      .card-content
+        .icat-author-content-item-tips 爱好游戏
+        span.icat-author-content-item-title GTAV
+        .content-bottom
+          .tips.game-yuanshen-uid ID: dreamerhe7747
+    .icat-author-content-item.comic-content
+      .card-content
+        .icat-author-content-item-tips 爱好漫画
+        span.icat-author-content-item-title 我是坏小子
+        .content-bottom
+          .icat-banner-button-group
+            a.banner-button(onclick='window.open("https://www.ikmhua.com/manhua/woshihuaixiaozi/#p0")', data-pjax-state)
+              i.iconfont.icat-play
+              |
+              span.banner-button-text 详情
+
+  .icat-author-content
+    .icat-author-content-item.like-technology
+      .card-content
+        .icat-author-content-item-tips 关注偏好
+        span.icat-author-content-item-title 游戏博客
+        .content-bottom
+          .tips Steam特惠,博客魔改
+    .icat-author-content-item.like-music
+      .card-content
+        .icat-author-content-item-tips 音乐偏好
+        span.icat-author-content-item-title 热血、粤语
+        |
+        span.icat-author-content-item-title 纯音乐、名谣
+        .content-bottom
+          .tips 跟 Dreamerhe 一起欣赏更多音乐
+        .icat-banner-button-group
+          a.banner-button(onclick='window.open("https://music.163.com/#/user/home?id=8550197782")', data-pjax-state)
+            i.iconfont.icat-music
+            |
+            span.banner-button-text 更多推荐
+
+  .icat-author-content
+    .create-site-post.icat-author-content-item.single
+      .icat-author-content-item-tips 心路历程
+      h1 关于本站
+      h3 首先，对每一位来到这里的友友们说声 "有幸遇见 很高兴认识你" 👋
+      strong 搭建Dreamerhe这个博客的初衷主要是我在B站上看到了小宇Boi的一个零成本搭建属于自己的个人网站
+      br
+      strong 当初也是热爱计算机，但对代码，博客，没有什么深刻的印象，只想着装B，当然也确实是
+      br
+      strong 我在这里会分享一些日常生活，魔改博客的教程(当然都是从大佬那里复制粘贴分享的)
+      br
+      br
+      strong 如果有什么问题，也可以通过邮箱dreamerhe7747@outlook.com或者email@dreamerhe.qianxun7747.eu.org来找小何哦~希望可以交到更多的朋友QWQ
+      br
+      strong 这些大概就是创造 <b>追梦小何博客</b> 的本意，也是我分享生活的方式。有幸能和你相遇在这里，相信我们能共同留下一段美好记忆
+      br
+      br
+      h2 博客类型
+      strong 本站建立于 2024年2月10日左右
+      br
+      strong
+        emp
+          a(target="_blank" href="https://hexo.io/zh-cn/") Hexo 
+          | 强力驱动 | Theme by 
+          a(target="_blank" href="https://github.com/jerryc127/hexo-theme-butterfly/") Butterfly
+      br
+
+script(src=url_for(theme.CDN.option.countup_js))
+script(src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/gsap/3.9.1/gsap.min.js")
+script.
+  (() => {
+    function isInViewPortOfOne(el) {
+      if (!el) return;
+      const viewPortHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+      const offsetTop = el.offsetTop;
+      const scrollTop = document.documentElement.scrollTop;
+      const top = offsetTop - scrollTop;
+      return top <= viewPortHeight;
+    }
+    fetch('https://v6-widget.51.la/v6/{3HjqjuxGOyrBmTjA}/quote.js').then(res => res.text()).then((data) => {
+        let title = ['最近活跃', '今日人数', '今日访问', '昨日人数', '昨日访问', '本月访问', '总访问量']
+        let num = data.match(/(<\/span><span>).*?(\/span><\/p>)/g)
+
+        num = num.map((el) => {
+          let val = el.replace(/(<\/span><span>)/g, '')
+          let str = val.replace(/(<\/span><\/p>)/g, '')
+          return str
+        })
+
+        let statisticEl = document.getElementById('statistic')
+
+        // 自定义不显示哪个或者显示哪个，如下为不显示 最近活跃访客 和 总访问量
+        let statistic = []
+        for (let i = 0; i < num.length; i++) {
+            if (!statisticEl) return
+            if (i == 0 || i == num.length - 1) continue;
+            statisticEl.innerHTML += '<div><span>' + title[i] + '</span><span id='+ title[i] + '>' + num[i] + '</span></div>'
+            queueMicrotask(()=> {
+              statistic.push(new CountUp(title[i], 0, num[i], 0, 2, {
+                  useEasing: true,
+                  useGrouping: true,
+                  separator: ',',
+                  decimal: '.',
+                  prefix: '',
+                  suffix: ''
+              }))
+            })
+        }
+
+        function statisticUP () {
+          let statisticElment = document.querySelector('.about-statistic.icat-author-content-item');
+          if(isInViewPortOfOne(statisticElment)) {
+            for (let i = 0; i < num.length; i++) {
+              if (i == 0 || i == num.length - 1) continue;
+              statistic[i-1].start();
+            }
+            document.removeEventListener('scroll', throttleStatisticUP);
+          }
+        }
+
+        const selfInfoContentYear = new CountUp('selfInfo-content-year', 0, 2002, 0, 2, {
+          useEasing: true,
+          useGrouping: false,
+          separator: ',',
+          decimal: '.',
+          prefix: '',
+          suffix: ''
+        })
+
+        function scrollSelfInfoContentYear() {
+          let selfInfoContentYearElment = document.querySelector('.icat-author-content-item.selfInfo.single');
+          if (selfInfoContentYearElment && isInViewPortOfOne(selfInfoContentYearElment)) {
+            selfInfoContentYear.start()
+            document.removeEventListener('scroll', throttleScrollSelfInfoContentYear);
+          }
+        }
+        const throttleStatisticUP = btf.throttle(statisticUP, 200)
+        document.addEventListener('scroll', throttleStatisticUP, {passive: true})
+
+        const throttleScrollSelfInfoContentYear = btf.throttle(scrollSelfInfoContentYear, 200)
+        document.addEventListener('scroll', throttleScrollSelfInfoContentYear, {passive: true})
+    });
+
+    var pursuitInterval = null;
+      pursuitInterval = setInterval(function () {
+        const show = document.querySelector('span[data-show]')
+        const next = show.nextElementSibling || document.querySelector('.first-tips')
+        const up = document.querySelector('span[data-up]')
+
+        if (up) {
+          up.removeAttribute('data-up')
+        }
+
+        show.removeAttribute('data-show')
+        show.setAttribute('data-up', '')
+
+        next.setAttribute('data-show', '')
+      }, 2000)
+
+      document.addEventListener('pjax:send', function(){
+        clearInterval(pursuitInterval);
+      });
+
+      var helloAboutEl = document.querySelector('.hello-about')
+      helloAboutEl.addEventListener("mousemove", evt => {
+        const mouseX = evt.offsetX;
+        const mouseY = evt.offsetY;
+        gsap.set(".cursor", {
+          x: mouseX,
+          y: mouseY,
+        })
+
+        gsap.to(".shape", {
+          x: mouseX,
+          y: mouseY,
+          stagger: -0.1
+        })
+      })
+  })()

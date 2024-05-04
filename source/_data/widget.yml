@@ -1,0 +1,7 @@
+top:
+  - id_name: widget-steam
+    name: 我的Steam卡片
+    icon: fa-brands fa-steam
+    html: '<img width="400" height="140" src="https://steamcard.dreamerhe.cn/card/76561199637067882/light,en,badge,group,text-eed202,bg-game-271590"><br>
+    <img width="400" height="140" src="https://steamcard.dreamerhe.cn/card/76561198972304388/light,en,badge,group,text-eed202,bg-game-271590">'
+

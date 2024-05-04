@@ -1,0 +1,27 @@
+- good_games:
+    - title: 开放世界
+      description: 开放世界谁能不爱呢？
+      games_list:
+        - name: GTA:5
+          specification: Rockstar Games
+          description: 谁还在买GTA5
+          image: https://imgheybox.max-c.com/heybox/game/header/271590_dXCCk.jpg
+          link: https://www.xiaoheihe.cn/games/detail/271590
+        - name: GTA:4
+          specification: Rockstar Games
+          description: 自由城的故事
+          image: https://img.qianxun7747.eu.org/file/476a75a6542cb4becafe9.jpg
+          link: https://store.steampowered.com/app/12210/Grand_Theft_Auto_IV_The_Complete_Edition/
+    - title: 我的最爱
+      description: 我不能没有它了
+      games_list:
+        - name: GTA:5
+          specification: Rockstar Games
+          description: 谁还在买GTA5
+          image: https://imgheybox.max-c.com/heybox/game/header/271590_dXCCk.jpg
+          link: https://www.xiaoheihe.cn/games/detail/271590
+        - name: GTA:4
+          specification: Rockstar Games
+          description: 自由城的故事
+          image: https://img.qianxun7747.eu.org/file/476a75a6542cb4becafe9.jpg
+          link: https://store.steampowered.com/app/12210/Grand_Theft_Auto_IV_The_Complete_Edition/
