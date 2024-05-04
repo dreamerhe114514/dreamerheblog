@@ -17,6 +17,7 @@ menu:
       游戏: /gameslife/ || icon-youxiji 
       藏宝阁: /cangbao/ || icon-baocang
       音乐: /music/ || icon-yinle
+      说说: /talks/ || icon-shuoshuo 
    订阅: /subscribe/ || icon-dingyue
    友链: /link/ || icon-youlian
    关于: /about/ || icon-guanyu
@@ -922,8 +923,6 @@ inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
 
-    # jQuery（必须在之前引入）
-    - <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     - <link rel="stylesheet" href="/mogaicss/steamcard.css">
     - <link rel="stylesheet" href="https://cdn2.codesign.qq.com/icons/XMx86jzlQw0brz3/latest/iconfont.css">
     - <link rel="stylesheet" href="/mogaicss/background.css">
@@ -966,9 +965,9 @@ inject:
     - <script src="/mogaijs/about.js"></script>
     - <script type="text/javascript" src="https://jsd.onmicrosoft.cn/npm/jquery@latest/dist/jquery.min.js"></script>
     - <script type="text/javascript" src="/js/rightmenu.js"></script>
-    - <script type="text/javascript" src="https://gcore.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script>
     - <script defer src="https://npm.elemecdn.com/hexo-theme-volantis@4.3.1/source/js/issues.js"></script>
     - <script src="/mogaijs/console.js"></script>
+	  - <script src="https://www.jsdelivr.ren/gh/nextapps-de/winbox/dist/winbox.bundle.min.js"></script>
     - <script src="/mogaijs/txmap.js"></script>
     #数据集合标签issues的依赖
 
